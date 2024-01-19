@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    font-family: 'Quicksand', sans-serif;
+}
+
+$base: 16px;
+
+@mixin headerLarge {
+    font-size: calc($base * 2.5 );
+    line-height: 120%;
+}
+
+@mixin headerMedium {
+    font-size: calc($base * 1.9);
+    line-height: 120%;
+}
+
+@mixin fontsizeLarge {
+    font-size: calc($base * 1.5 );
+    line-height: 120%;
+}
+
+@mixin fontsizeRegular {
+    font-size: $base;
+    line-height: 120%;
+}
+
+@mixin fontsizeMedium {
+    font-size: calc($base * 0.9);
+    line-height: 120%;
+}
+
+@mixin fontsizeSmall {
+    font-size: calc($base * 0.8 );
+    line-height: 120%;
+}

@@ -1,0 +1,32 @@
+/* COLORS */
+$primaryTextColor: #E2E2E2;
+$primaryBackgroundColor: #19747E;
+$headerColor: #D1E8E2;
+$secondaryColor: #A9D6E5;
+
+$baseline: 16px;
+
+/* MARGINS, PADDINGS, GAPS */
+$padding-page: calc($baseline * 2); 
+
+/* EFFECTS */
+//Shadows
+
+/* RESPONSIVE */
+$mobileBreakpoint: 30rem;
+$tabletBreakpoint: 40rem;
+
+/* HELPERS */
+@mixin center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin pageWrapper {
+    // max-width: 100%;
+    height: 100vh;
+    background-color: $primaryBackgroundColor;
+    padding: $padding-page;
+}

@@ -1,26 +1,13 @@
-import './App.css'
-
-function App() {
-
-  return (
-    <>
-    </>
-  )
-}
-
-export default App
-
-
-// import { AppRoutes } from "@zocom/router";
+import { AppRoutes } from '@portfolio/router';
 // import { AppProvider } from "@zocom/app-context";
 
-// export function App() {
+export function App() {
 
-//   return (
-//     <AppProvider> 
-//       <div className="App">
-//         <AppRoutes />
-//       </div>
-//     </AppProvider>
-//   )
-// }
+  return (
+    // <AppProvider> 
+    <div className='App'>
+      <AppRoutes />
+    </div>
+    // </AppProvider>
+  )
+}
