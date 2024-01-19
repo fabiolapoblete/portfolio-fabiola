@@ -1,0 +1,25 @@
+@use '@portfolio/styles' as *;
+
+.hamburgerMenu.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: $headerColor;
+    padding: $padding-page;
+}
+
+.hamburgerMenu__links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+
+    li a {
+        text-decoration: none;
+        font-size: 1.5rem; //variables is not working?
+        font-weight: 500; //variables?
+        color: $primaryBackgroundColor;
+    }
+}

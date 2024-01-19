@@ -1,0 +1,36 @@
+@use '@portfolio/styles' as *;
+
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $primaryBackgroundColor;
+    box-shadow: $shadow-navbar;
+    &__links {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 $padding-page;
+        list-style: none;
+    
+        li {
+            a {
+                color: $primaryTextColor;
+                text-decoration: none;
+                letter-spacing: 0.1rem;
+
+                // &.active {
+                //     font-weight: bold;
+                // }
+
+                // &:active {
+                //     color: red;
+                // }
+            }
+        }
+    }
+
+    @media screen and (max-width: $tabletBreakpoint) {
+        display: none;
+    }
+}

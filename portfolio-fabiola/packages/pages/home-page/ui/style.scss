@@ -9,4 +9,5 @@ body {
 
 .home-page {
     @include pageWrapper;
+    position: relative;
 }
