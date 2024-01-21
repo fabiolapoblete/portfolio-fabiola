@@ -1,0 +1,20 @@
+@use '@portfolio/styles' as *;
+
+.pageHeader {
+    display: flex;
+    align-items: center;
+    color: $headerColor;
+
+    &__title {
+        margin-right: 1rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    &__line {
+        flex-grow: 1;
+        border: none;
+        border-top: 1px solid;
+        margin: 0;
+    }
+}

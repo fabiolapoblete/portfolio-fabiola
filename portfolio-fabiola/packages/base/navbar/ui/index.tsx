@@ -36,7 +36,7 @@ export const Navbar = () => {
     }
 
     return (
-        <header>
+        <header className="header">
             <nav className='navbar'>
                 <ul className='navbar__links'>
                     {

@@ -1,12 +1,17 @@
 @use '@portfolio/styles' as *;
 
-.navbar {
+.header {
     width: 100%;
-    position: absolute;
+    // position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: $primaryBackgroundColor;
     box-shadow: $shadow-navbar;
+    padding: $padding-page;
+}
+.navbar {
+
     &__links {
         display: flex;
         justify-content: space-evenly;
