@@ -1,3 +1,5 @@
+import './style.scss'
+
 export const Hero = () => {
     return (
         <section className='hero' id='hero'>
@@ -6,7 +8,7 @@ export const Hero = () => {
             src='../../public/assets/profil-fabiola.jpeg'
             alt="Profile picture of Fabiola Poblete"
             />
-        <section>
+        <section className='hero__heading'>
             <h1>Hello, i'm <span>Fabiola</span></h1>
             <h3>frontend developer</h3>
         </section>
