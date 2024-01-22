@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { HamburgerIcon, CloseIcon } from '../../../core/assets/svgIcons'
 import { Link } from "react-router-dom"
-// import './style.scss';
+import './style.scss';
 
 export const HamburgerMenu = () => {
     const navItems = [

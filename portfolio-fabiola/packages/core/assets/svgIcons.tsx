@@ -1,14 +1,20 @@
 export const CloseIcon = (
-    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="30" viewBox="0 0 38 30" fill="none">
-        <line x1="8.09138" y1="1.97098" x2="32.1018" y2="27.4366" stroke="#19747E" stroke-width="3"/>
-        <line x1="30.155" y1="1.95703" x2="7.82441" y2="28.9078" stroke="#19747E" stroke-width="3"/>
+    // <svg xmlns="http://www.w3.org/2000/svg" width="38" height="30" viewBox="0 0 38 30" fill="none">
+    //     <line x1="8.09138" y1="1.97098" x2="32.1018" y2="27.4366" stroke="#19747E" stroke-width="3"/>
+    //     <line x1="30.155" y1="1.95703" x2="7.82441" y2="28.9078" stroke="#19747E" stroke-width="3"/>
+    // </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M14.9938 12L23.3736 3.62021C23.7713 3.22321 23.995 2.68448 23.9955 2.12254C23.996 1.5606 23.7732 1.02148 23.3762 0.623777C22.9792 0.226074 22.4405 0.00236781 21.8786 0.00187155C21.3166 0.00137528 20.7775 0.224129 20.3798 0.621131L12 9.00092L3.62021 0.621131C3.22251 0.223428 2.68311 0 2.12067 0C1.55823 0 1.01883 0.223428 0.621131 0.621131C0.223428 1.01883 0 1.55823 0 2.12067C0 2.68311 0.223428 3.22251 0.621131 3.62021L9.00092 12L0.621131 20.3798C0.223428 20.7775 0 21.3169 0 21.8793C0 22.4418 0.223428 22.9812 0.621131 23.3789C1.01883 23.7766 1.55823 24 2.12067 24C2.68311 24 3.22251 23.7766 3.62021 23.3789L12 14.9991L20.3798 23.3789C20.7775 23.7766 21.3169 24 21.8793 24C22.4418 24 22.9812 23.7766 23.3789 23.3789C23.7766 22.9812 24 22.4418 24 21.8793C24 21.3169 23.7766 20.7775 23.3789 20.3798L14.9938 12Z" fill="#74BDCB"/>
     </svg>
 );
 
 export const HamburgerIcon = (
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="23" viewBox="0 0 30 23" fill="none">
-        <line y1="1.5" x2="30" y2="1.5" stroke="#D1E8E2" stroke-width="3"/>
-        <line y1="11.5" x2="30" y2="11.5" stroke="#D1E8E2" stroke-width="3"/>
-        <line y1="21.5" x2="30" y2="21.5" stroke="#D1E8E2" stroke-width="3"/>
+    // <svg xmlns="http://www.w3.org/2000/svg" width="30" height="23" viewBox="0 0 30 23" fill="none">
+    //     <line y1="1.5" x2="30" y2="1.5" stroke="#D1E8E2" stroke-width="3"/>
+    //     <line y1="11.5" x2="30" y2="11.5" stroke="#D1E8E2" stroke-width="3"/>
+    //     <line y1="21.5" x2="30" y2="21.5" stroke="#D1E8E2" stroke-width="3"/>
+    // </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <path d="M2 2H26M2 14H26M2 26H26" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
     </svg>
 );

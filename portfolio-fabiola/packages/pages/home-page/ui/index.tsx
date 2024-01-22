@@ -1,4 +1,4 @@
-// import './style.scss';
+import './style.scss';
 // import { PageHeader } from '@portfolio/page-header'
 import { Header } from '@portfolio/header'
 import { Hero } from '@portfolio/hero'

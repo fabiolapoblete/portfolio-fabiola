@@ -1,67 +1,80 @@
 @use '@portfolio/styles' as *;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    font-family: 'Quicksand', sans-serif;
+}
+
+* {
+    @include reset;
+}
 
 body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    min-height: 100vh;
-    // overflow: hidden;
+    scroll-behavior: smooth;
 }
 
-.home-page {
-    @include pageWrapper;
-    position: relative;
+// body {
+//     box-sizing: border-box;
+//     padding: 0;
+//     margin: 0;
+//     min-height: 100vh;
+//     // overflow: hidden;
+// }
 
-    main {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        margin-top: 3rem;
-        height: 100vh;
-        // width: 100vw;
+// .home-page {
+//     @include pageWrapper;
+//     position: relative;
 
-        .home-page__img {
-            align-self: flex-end;
+//     main {
+//         display: flex;
+//         flex-direction: column;
+//         gap: 2rem;
+//         margin-top: 3rem;
+//         height: 100vh;
+//         // width: 100vw;
 
-            & img {
-                border-radius: 50%;
-                width: 10rem;
-                height: 10rem;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
-                margin-top: 5rem;
-                // box-shadow: 0 4px 8px rgba(169, 214, 229, 0.2);
-            }
-        }
+//         .home-page__img {
+//             align-self: flex-end;
 
-        .home-page__heading {
-            color: $headerColor;
-            display: flex;
-            flex-direction: column;
+//             & img {
+//                 border-radius: 50%;
+//                 width: 10rem;
+//                 height: 10rem;
+//                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+//                 margin-top: 5rem;
+//                 // box-shadow: 0 4px 8px rgba(169, 214, 229, 0.2);
+//             }
+//         }
+
+//         .home-page__heading {
+//             color: $headerColor;
+//             display: flex;
+//             flex-direction: column;
             
-            h1 {
-                font-size: 2.5rem;
-                font-weight: 400;
-                margin: 0;
-            }
+//             h1 {
+//                 font-size: 2.5rem;
+//                 font-weight: 400;
+//                 margin: 0;
+//             }
 
-            h3 {
-                font-size: 1.5rem;
-                font-weight: 400;
-                margin-top: 0;
-            }
+//             h3 {
+//                 font-size: 1.5rem;
+//                 font-weight: 400;
+//                 margin-top: 0;
+//             }
 
-            span {
-                color: $secondaryColor;
-            }
-        }
-    }
+//             span {
+//                 color: $secondaryColor;
+//             }
+//         }
+//     }
 
-    .about {
-        margin-top: auto;
-    }
+//     .about {
+//         margin-top: auto;
+//     }
 
-    .about__content p {
-        color: $primaryTextColor;
-        font-size: 1rem;
-    }
-}
+//     .about__content p {
+//         color: $primaryTextColor;
+//         font-size: 1rem;
+//     }
+// }
