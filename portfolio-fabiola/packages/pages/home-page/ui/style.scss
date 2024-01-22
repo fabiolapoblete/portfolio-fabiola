@@ -4,7 +4,8 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    min-height: 100vh;
+    // overflow: hidden;
 }
 
 .home-page {
@@ -16,6 +17,8 @@ body {
         flex-direction: column;
         gap: 2rem;
         margin-top: 3rem;
+        height: 100vh;
+        // width: 100vw;
 
         .home-page__img {
             align-self: flex-end;
@@ -50,7 +53,15 @@ body {
             span {
                 color: $secondaryColor;
             }
-
         }
+    }
+
+    .about {
+        margin-top: auto;
+    }
+
+    .about__content p {
+        color: $primaryTextColor;
+        font-size: 1rem;
     }
 }
