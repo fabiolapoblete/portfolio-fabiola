@@ -1,15 +1,15 @@
 @use '@portfolio/styles' as *;
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-.contact__channels {
-    display: flex;
-    gap: 1rem;
-    a {
-        margin: 3px;
-        color: #444;
+    @include flex-column-2;
+
+    &__channels {
+        display: flex;
+        gap: 1rem;
+
+        a {
+            color: $primaryTextColor;
+            margin: 3px;
+        }
     }
 }

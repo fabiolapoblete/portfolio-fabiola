@@ -1,21 +1,67 @@
-/* COLORS */
-$primaryTextColor: #E2E2E2;
-$primaryBackgroundColor: #19747E;
-$headerColor: #D1E8E2;
-$secondaryColor: #A9D6E5;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    font-family: 'Quicksand', sans-serif;
+}
 
 $baseline: 16px;
 
-/* MARGINS, PADDINGS, GAPS */
-$padding-page: calc($baseline * 2); 
+/* COLORS */
+$primaryTextColor: #444;
+$primaryColor: #74BDCB;
+$secondaryColor: #EFE7BC;
+$headerColor: #fff;
+$tagColor: #74bccbb9;
 
+/* MARGINS, PADDINGS, GAPS */
+$padding-small: calc($baseline);
+$padding-medium: calc($baseline * 1.5);
+$padding-large: calc($baseline * 2); 
+
+$width-full: 100%;
 /* EFFECTS */
-$shadow-navbar: 2px 2px 4px 2px rgba(169, 214, 229, 0.2);
+$box-shaddow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 
 /* RESPONSIVE */
 $mobileBreakpoint: 30rem;
 $tabletBreakpoint: 40rem;
 $desktopBreakpoint: 60rem;
+
+/* TYPOGRAPHY */
+$font-weight-bold: 700;
+$font-weight-semi-bold: 600;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+
+@mixin font-size-huge {
+    font-size: calc($baseline * 2.5 );
+    line-height: 120%;
+}
+
+@mixin font-size-large {
+    font-size: calc($baseline * 1.8 );
+    line-height: 120%;
+}
+
+@mixin font-size-medium {
+    font-size: calc($baseline * 1.5 );
+    line-height: 120%;
+}
+
+@mixin font-size-regular {
+    font-size: calc($baseline * 1.3 );
+    line-height: 120%;
+}
+
+@mixin font-size-small {
+    font-size: $baseline;
+    line-height: 120%;
+}
+
+@mixin font-size-tiny {
+    font-size: calc($baselin * 0.8 );
+    line-height: 120%;
+}
 
 /* HELPERS */
 @mixin reset {
@@ -26,17 +72,15 @@ $desktopBreakpoint: 60rem;
     text-decoration: none;
 }
 
+@mixin flex-column-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 @mixin center {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-@mixin pageWrapper {
-    // max-width: 100vw;
-    // height: 100vh;
-    background-color: $primaryBackgroundColor;
-    padding: $padding-page;
-    // overflow: hidden;
 }

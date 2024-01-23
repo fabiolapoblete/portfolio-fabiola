@@ -13,23 +13,21 @@
         left: 0;
         width: 70%;
         height: 100%;
-        background-color: #EFE7BC;
-        padding: 1rem;
+        background-color: $secondaryColor;
+        padding: $padding-small;
     }
     
     &__links {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        font-size: 1.5rem;
+        @include flex-column-2;
+        @include font-size-medium;
+        font-weight: $font-weight-bold;
         letter-spacing: 0.1rem;
-        font-weight: 700;
-        padding: $padding-page;
+        padding: $padding-large;
         margin-top: 2rem;
         cursor: pointer;
         
         li a {
-            color: #74BDCB;
+            color: $primaryColor;
         }
     }
 }

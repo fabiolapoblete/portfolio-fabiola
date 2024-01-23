@@ -1,4 +1,17 @@
-export const SkillsData: {title: string, skills: string}[]  = [
+type ProjectDetailsProps = {
+    title: string
+    imgSrc: string
+    desc: string
+    tags: string[]
+    url: string
+}
+
+type SkillsDataProps = {
+    title: string
+    skills: string
+}
+
+export const SkillsData: SkillsDataProps[]  = [
     { title: 'Programing languages', skills: 'JavaScript, Python' },
     { title: 'Frontend techniques', skills: 'HTML, CSS, React, Redux, SASS, framer-motion, Anime.js' },
     { title: 'Backend techniques', skills: 'Node.js, Express.js, NeDb' },
@@ -7,14 +20,6 @@ export const SkillsData: {title: string, skills: string}[]  = [
     { title: 'UX design', skills: 'Figma' },
     { title: 'Agile methodology', skills: 'Scrum' },
 ];
-
-type ProjectDetailsProps = {
-    title: string
-    imgSrc: string
-    desc: string
-    tags: string[]
-    url: string
-}
 
 export const ProjectDetails: ProjectDetailsProps[] = [
     {title: 'Territorial Duck', imgSrc: '/territorial_duck.png', desc: 'An ongoing game project in Unity in collaboration with my husband, sister-in-law and brother-in-law.', tags: ["Unity"], url: 'https://store.steampowered.com/app/2100130/Territorial_Duck/'},
