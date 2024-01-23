@@ -30,7 +30,7 @@ export const Navbar = () => {
             <ul className='navbar__links'>
                 {
                     navItems.map((item) => (
-                        <li>
+                        <li key={item.name}>
                             <Link to={item.path}>
                                 <p>{item.name}</p>
                             </Link>

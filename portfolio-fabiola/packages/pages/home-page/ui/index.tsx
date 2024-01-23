@@ -1,8 +1,7 @@
 import './style.scss';
 import { Header } from '@portfolio/header'
 import { Hero } from '@portfolio/hero'
-import { ProjectCard } from '@portfolio/project-card'
-import { SkillsData } from '..'
+import { SkillsData, ProjectDetails } from '..'
 import { BuildIcon } from '../../../core/assets/svgIcons';
 
 export const MainPage = () => {    
@@ -33,7 +32,24 @@ export const MainPage = () => {
                 </section>
                 <section className='section section--projects' id="projects">
                     <h3 className='section__title'>Projects</h3>
-                    <ProjectCard />
+                    <section className='section--projects__container'>
+                        {
+                            ProjectDetails.map((project, index) => (
+                                <article key={index}>
+                                    <img src={project.imgSrc} alt="" />
+                                    <h4>{project.title}</h4>
+                                    <p>{project.desc}</p>
+                                    <section>
+                                        {
+                                            project.tags.map((tag, index) => (
+                                                <p key={index}>{tag}</p>
+                                            ))
+                                        }
+                                    </section>
+                                </article>
+                            ))
+                        }
+                    </section>
                 </section>
             </main>
         </div>

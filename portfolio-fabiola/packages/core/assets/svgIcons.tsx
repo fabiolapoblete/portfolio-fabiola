@@ -15,7 +15,7 @@ export const HamburgerIcon = (
     //     <line y1="21.5" x2="30" y2="21.5" stroke="#D1E8E2" stroke-width="3"/>
     // </svg>
     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-        <path d="M2 2H26M2 14H26M2 26H26" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+        <path d="M2 2H26M2 14H26M2 26H26" stroke="white" strokeWidth="3" strokeMiterlimit="10" strokeLinecap="round"/>
     </svg>
 );
 
