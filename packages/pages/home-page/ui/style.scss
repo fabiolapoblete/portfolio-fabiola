@@ -22,7 +22,8 @@ body {
             &__title {
                 color: $primaryColor;
                 @include font-size-large;
-                margin-bottom: 1rem;
+                font-weight: $font-weight-bold;
+                margin-bottom: 2rem;
             }
         
             p {
@@ -32,12 +33,14 @@ body {
             }
         
             &--skills {
-                width: 60%;
-        
                 .skillsSection {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
-                    gap: 1rem;
+                    padding-left: 2rem;
+
+                    &__title {
+                        font-weight: 500;
+                    }
                 }
                 
                 .skillsColumn {
@@ -68,6 +71,7 @@ body {
                         padding: $padding-small;
         
                         &:hover {
+                            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 40%);
                             cursor: pointer;
                         }
         

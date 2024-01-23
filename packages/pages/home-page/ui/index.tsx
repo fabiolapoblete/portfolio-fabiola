@@ -24,7 +24,7 @@ export const MainPage = () => {
                         <section key={index} className='skillsSection'>
                             <section className='skillsColumn'>
                                 <div>{BuildIcon}</div>
-                                <p>{section.title}</p>
+                                <p className='skillsSection__title'>{section.title}</p>
                             </section>
                             <section className='skillsColumn'>
                                 <p>{section.skills}</p>
