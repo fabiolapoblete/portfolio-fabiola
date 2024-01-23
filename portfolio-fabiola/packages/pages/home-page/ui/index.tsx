@@ -1,6 +1,7 @@
 import './style.scss';
 import { Header } from '@portfolio/header'
 import { Hero } from '@portfolio/hero'
+import { Tag } from '@portfolio/tag'
 import { SkillsData, ProjectDetails } from '..'
 import { BuildIcon } from '../../../core/assets/svgIcons';
 
@@ -32,21 +33,22 @@ export const MainPage = () => {
                 </section>
                 <section className='section section--projects' id="projects">
                     <h3 className='section__title'>Projects</h3>
+                    <p>Here is a collection of projects I've engaged with that I’m extra proud of. Some are educational assignments, while others are pursued purely for enjoyment. Click on a card to go to the webpage. You can find additional projects on my <a href='github.com/fabiolapoblete' target='_blank'>GitHub page.</a></p>
                     <section className='section--projects__container'>
                         {
                             ProjectDetails.map((project, index) => (
-                                <article key={index}>
-                                    <img src={project.imgSrc} alt="" />
-                                    <h4>{project.title}</h4>
-                                    <p>{project.desc}</p>
-                                    <section>
+                                <a href={project.url} target='_blank' className='projectCard' key={index}>
+                                    <img className='projectCard__img' src={project.imgSrc} alt="" />
+                                    <h4 className='projectCard__title'>{project.title}</h4>
+                                    <p className='projectCard__desc'>{project.desc}</p>
+                                    <section className='projectCard__tags'>
                                         {
                                             project.tags.map((tag, index) => (
-                                                <p key={index}>{tag}</p>
+                                                <Tag key={index} tag={tag}/>
                                             ))
                                         }
                                     </section>
-                                </article>
+                                </a>
                             ))
                         }
                     </section>
