@@ -5,7 +5,7 @@ export const Hero = () => {
         <section className='hero' id='hero'>
             <img
             className="hero__profile"
-            src='../../public/profil-fabiola.jpeg'
+            src='/profil-fabiola.jpeg'
             alt="Profile picture of Fabiola Poblete"
             />
         <section className='hero__heading'>
