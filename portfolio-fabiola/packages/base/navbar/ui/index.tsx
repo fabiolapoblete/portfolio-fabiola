@@ -1,27 +1,27 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-scroll'
 import './style.scss';
 
 export const Navbar = () => {
     const navItems = [
         {
             name: 'Home',
-            path: '#hero'
+            path: 'hero'
         }, 
         {
             name: 'About me',
-            path: '#about'
+            path: 'about'
         },
         {
             name: 'Skills',
-            path: '#projects'
+            path: 'skills'
         }, 
         {
             name: 'Projects',
-            path: '#projects'
+            path: 'projects'
         }, 
         {
             name: 'Contact',
-            path: '#contact'
+            path: 'contact'
         }, 
     ]
 
@@ -31,7 +31,12 @@ export const Navbar = () => {
                 {
                     navItems.map((item) => (
                         <li key={item.name}>
-                            <Link to={item.path}>
+                            <Link               
+                            to={item.path}
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={900}>
                                 <p>{item.name}</p>
                             </Link>
                         </li>

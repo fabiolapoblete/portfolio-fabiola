@@ -1,25 +1,29 @@
 import { useState } from "react"
 import { HamburgerIcon, CloseIcon } from '../../../core/assets/svgIcons'
-import { Link } from "react-router-dom"
+import { Link } from 'react-scroll'
 import './style.scss';
 
 export const HamburgerMenu = () => {
     const navItems = [
         {
             name: 'Home',
-            path: '#hero'
+            path: 'hero'
         }, 
         {
+            name: 'About me',
+            path: 'about'
+        },
+        {
             name: 'Skills',
-            path: '#skills'
+            path: 'skills'
         }, 
         {
             name: 'Projects',
-            path: '#projects'
+            path: 'projects'
         }, 
         {
             name: 'Contact',
-            path: '#contact'
+            path: 'contact'
         }, 
     ]
 
@@ -40,7 +44,14 @@ export const HamburgerMenu = () => {
                         {
                             navItems.map((item) => (
                                 <li key={item.name}>
-                                    <Link onClick={toggleMenu} to={item.path}>
+                                    <Link 
+                                    onClick={toggleMenu} 
+                                    to={item.path}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={900}
+                                    >
                                         <p>{item.name}</p>
                                     </Link>
                                 </li>

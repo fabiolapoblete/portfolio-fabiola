@@ -2,6 +2,7 @@ import './style.scss';
 import { Header } from '@portfolio/header'
 import { Hero } from '@portfolio/hero'
 import { Tag } from '@portfolio/tag'
+import { Contact } from '@portfolio/contact'
 import { SkillsData, ProjectDetails } from '..'
 import { BuildIcon } from '../../../core/assets/svgIcons';
 
@@ -52,6 +53,10 @@ export const MainPage = () => {
                             ))
                         }
                     </section>
+                </section>
+                <section className='section section--contact'>
+                    <h3 className='section__title'>Contact</h3>
+                    <Contact />
                 </section>
             </main>
         </div>
