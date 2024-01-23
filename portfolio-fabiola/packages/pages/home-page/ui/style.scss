@@ -39,21 +39,19 @@ body {
         margin-bottom: 1rem;
         color: #444;
     }
+
+    &--skills {
+        width: 60%;
+    }
 }
 
 .skillsSection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  
-// .skillsColumn {
-//     background-color: #f0f0f0;
-//     padding: 20px;
-//     border-radius: 8px;
-//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-//  }
-  
-.skillsColumn h2 {
-    margin-bottom: 10px;
+    gap: 1rem;
+}
+
+.skillsColumn {
+    display: flex;
+    gap: 2rem;
 }

@@ -1,17 +1,11 @@
 import './style.scss';
 import { Header } from '@portfolio/header'
 import { Hero } from '@portfolio/hero'
+import { ProjectCard } from '@portfolio/project-card'
+import { SkillsData } from '..'
+import { BuildIcon } from '../../../core/assets/svgIcons';
 
-export const MainPage = () => {
-    const skillsData = [
-        { title: 'Programing languages', skills: 'JavaScript, Python' },
-        { title: 'Frontend techniques', skills: 'HTML, CSS, React, Redux, SASS, framer-motion, Anime.js' },
-        { title: 'Backend techniques', skills: 'Node.js, Express.js, NeDb' },
-        { title: 'Cloud services', skills: 'AWS (Amazon Web Services)' },
-        { title: 'Version control', skills: 'GitHub, GitLab' },
-        { title: 'UX design', skills: 'Figma' },
-        { title: 'Agile methodology', skills: 'Scrum' },
-    ];
+export const MainPage = () => {    
     return (
         <div className='wrapper'>
             <Header />
@@ -25,9 +19,10 @@ export const MainPage = () => {
                 </section>
                 <section className='section section--skills' id="skills">
                     <h3 className='section__title'>Technical skills</h3>
-                    {skillsData.map((section, index) => (
+                    {SkillsData.map((section, index) => (
                         <section key={index} className='skillsSection'>
                             <section className='skillsColumn'>
+                                <div>{BuildIcon}</div>
                                 <p>{section.title}</p>
                             </section>
                             <section className='skillsColumn'>
@@ -35,6 +30,10 @@ export const MainPage = () => {
                             </section>
                         </section>
                     ))}
+                </section>
+                <section className='section section--projects' id="projects">
+                    <h3 className='section__title'>Projects</h3>
+                    <ProjectCard />
                 </section>
             </main>
         </div>
