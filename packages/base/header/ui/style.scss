@@ -2,9 +2,11 @@
 
 .header {
     position: fixed;
+    top: 0;
     width: $width-full;
-    background-color:  $primaryColor;
-    box-shadow: $box-shaddow;
+    // background-color:  $primaryColor;
+    background-color: #3AAFA9;
+    // box-shadow: $box-shaddow;
     display: flex;
     justify-content: flex-end;
     padding: $padding-small;

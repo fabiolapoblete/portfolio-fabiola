@@ -6,12 +6,12 @@ import { Contact } from '@portfolio/contact'
 import { SkillsData, ProjectDetails } from '..'
 import { BuildIcon } from '../../../core/assets/svgIcons';
 
-export const MainPage = () => {    
+export const HomePage = () => {    
     return (
         <div className='wrapper'>
             <Header />
             <Hero />
-            <main className='main'>
+            {/* <main className='main'>
                 <section className='section section--about' id="about">
                     <h3 className='section__title'>About me</h3>
                     <p>Two years ago i made a career switch to pursue my dream of becoming a developer, and I haven't looked back since. I have a background in meteorology with a bachelor's degree in physics and dedicated eight years at SMHI where I explored diverse roles and fields.</p>
@@ -58,7 +58,7 @@ export const MainPage = () => {
                     <h3 className='section__title'>Contact</h3>
                     <Contact />
                 </section>
-            </main>
+            </main> */}
         </div>
     )
 }

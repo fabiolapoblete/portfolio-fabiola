@@ -1,10 +1,13 @@
 @use '@portfolio/styles' as *;
 
 .tag {
-    background-color: $tagColor;
-    color: $headerColor;
+    // background-color: $tagColor;
+    background-color: #2B7A78;
+    // color: $headerColor;
+    color:#FEFFFF;
     font-size: 0.8rem;
-    font-weight: $font-weight-semi-bold;
+    // font-weight: $font-weight-semi-bold;
+    font-weight: 500;
     border-radius: 3rem;
     border: none;
     box-shadow: $box-shaddow;

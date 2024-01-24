@@ -2,33 +2,46 @@
 
 .hero {
     height: 100vh;
-    background-color: $primaryColor;
+    // background-color: $primaryColor;
+    background-color: #3AAFA9;
     background-image: url('/wave_w2881xh801_a775fc2518c0a6ca438299351b5d48a3faf59e7348ac4a6f5f88b3b68fd5a06a.webp');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
-    @include flex-column-2;
-    justify-content: center;
+    // @include flex-column-2;
+    // justify-content: center;
+    display: flex;
+    gap: 3rem;
     align-items: center;
-    text-align: center;
+    padding-left: 10rem;
+    // text-align: center;
 
     &__heading {
-        color: $headerColor;
+        // color: $headerColor;
+        color: #FEFFFF;
+        font-weight: 700;
 
         h1 {
             @include font-size-huge;
-            font-weight: $font-weight-semi-bold;
+            // font-weight: $font-weight-semi-bold;
+            // font-weight: 700;
             margin: 0;
         }
     
         h3 {
             @include font-size-medium;
-            font-weight: $font-weight-regular;
+            // font-weight: $font-weight-regular;
+            // font-weight: 700;
             margin-top: 0;
+            color: #17252A;
+            text-align: end;
+
         }
 
         span {
-            color: $secondaryColor;
+            // color: $secondaryColor;
+            color: #17252A;
+            // font-weight: 700;
         }
     }
 
@@ -37,22 +50,22 @@
         box-shadow: $box-shaddow;
     }
 
-    .btn {
-        color: $primaryColor;
-        @include font-size-regular;
-        font-weight: $font-weight-semi-bold;
-        background: linear-gradient(to left, white 50%, #E7F2F8 50% ) right;  
-        background-size: 200%;
-        border-radius: 3rem;
-        border: none;
-        box-shadow: $box-shaddow;
-        padding: 0.5rem 1rem;
-        transition: 1s ease-out;
+    // .btn {
+    //     // color: $primaryColor;
+    //     @include font-size-regular;
+    //     font-weight: $font-weight-semi-bold;
+    //     background: linear-gradient(to left, #FEFFFF 50%, #3AAFA9 50% ) right;  
+    //     background-size: 200%;
+    //     border-radius: 3rem;
+    //     border: none;
+    //     box-shadow: $box-shaddow;
+    //     padding: 0.5rem 1rem;
+    //     transition: 1s ease-out;
     
-        &:hover {
-            transform: scale(1.1);
-            background-position: left;
-            cursor: pointer;
-        }
-    }
+    //     &:hover {
+    //         transform: scale(1.1);
+    //         background-position: left;
+    //         cursor: pointer;
+    //     }
+    // }
 }

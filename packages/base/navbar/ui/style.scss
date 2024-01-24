@@ -15,11 +15,20 @@
         cursor: pointer;
 
         li a {
-            color: $headerColor;
+            // color: $headerColor;
+            color: #FEFFFF;
+            // color: #17252A;
             transition: color 0.5s ease-in-out;
     
             &:hover {
-                color: $secondaryColor; 
+                // color: $secondaryColor; 
+                color: #17252A;
+            }
+        }
+
+        .navbar__active {
+            a {
+                color: #17252A; 
             }
         }
     }

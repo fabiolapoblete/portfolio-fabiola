@@ -1,0 +1,84 @@
+@use '@portfolio/styles' as *;
+
+* {
+    @include reset;
+}
+
+.main {
+
+    .section--projects__desc {
+        color: #17252A;
+        font-weight: 600;
+        font-size: 1rem;
+        text-align: justify;
+        padding: 2rem;
+
+        a {
+            color: #FEFFFF;
+        }
+    }
+    .section--projects__header {
+        h3 {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            span {
+                flex: 1;
+                hr {
+                    height: 5px;
+                    background-color: #2B7A78;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .section--projects__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        padding: $padding-large;
+
+        .projectCard {
+            width: 25rem;
+            height: 18rem;
+            display: flex;
+            flex-direction: column;
+            border-radius: 0.6rem;
+            box-shadow: $box-shaddow;
+            padding: $padding-small;
+            background-color: #FEFFFF;
+
+            &:hover {
+                box-shadow: 0 4px 8px 0 rgb(0 0 0 / 40%);
+                cursor: pointer;
+            }
+
+            &__title {
+                @include font-size-medium;
+                // color: $primaryColor;
+                color: #17252A;
+                margin-top: 1rem;
+            }
+
+            &__desc {
+                // color: $primaryTextColor;
+                color: #17252A;
+                @include font-size-small;
+                font-weight: $font-weight-medium;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            &__tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                // margin-top: 1.9rem;
+                margin-top: auto;
+            }
+        }
+    }
+}

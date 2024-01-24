@@ -3,13 +3,23 @@ import {
     RouterProvider,
   } from 'react-router-dom';
   
-import { MainPage } from '@portfolio/main-page';
+import { HomePage } from '@portfolio/home-page';
+import { AboutPage } from '@portfolio/about-page';
+import { ProjectsPage } from '@portfolio/projects-page';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <MainPage />,
+    element: <HomePage />,
   },
+  {
+    path: '/about',
+    element: <AboutPage />
+  },
+  {
+    path: '/projects',
+    element: <ProjectsPage />
+  }
 ]);
 
 export const AppRoutes = () => {
