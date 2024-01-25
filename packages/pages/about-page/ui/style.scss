@@ -69,6 +69,19 @@ body {
               }
             }
           }
+          &--cv {
+            display: flex;
+            text-align: center;
+            gap: 1rem;
+            margin-top: 2.5rem;
+
+            p {
+              @include font-size-small;
+              color: $headerColor;
+              font-weight: $font-weight-bold;
+              align-self: flex-end;
+            }
+          }
         }
       }
     }

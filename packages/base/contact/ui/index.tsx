@@ -1,7 +1,7 @@
 import './style.scss';
 
 import {
-  EmailIcon,
+  CVIcon,
   GithubIcon,
   LinkedInIcon,
 } from '../../../core/assets/svgIcons';
@@ -15,21 +15,18 @@ export const Contact = () => {
         Feel free to reach out to me through the following channels:
       </p>
       <section className='contact__channels'>
-        <section>
-          <a href='fabiola.broccolo@gmail.com' target='_blank'>
-            {EmailIcon}
-          </a>
-        </section>
-        <section>
-          <a href='linkedin.com/in/fabiola-poblete-662652114' target='_blank'>
-            {LinkedInIcon}
-          </a>
-        </section>
-        <section>
-          <a href='github.com/fabiolapoblete' target='_blank'>
-            {GithubIcon}
-          </a>
-        </section>
+        <a
+          href='https://www.linkedin.com/in/fabiola-poblete-662652114/'
+          target='_blank'
+        >
+          {LinkedInIcon}
+        </a>
+        <a href='https://github.com/fabiolapoblete' target='_blank'>
+          {GithubIcon}
+        </a>
+        <a href='https://github.com/fabiolapoblete' target='_blank'>
+          {CVIcon}
+        </a>
       </section>
       <p>
         Don't hesitate to drop me a message — I look forward to hearing from

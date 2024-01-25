@@ -2,6 +2,7 @@ import './style.scss';
 
 import { Header } from '@portfolio/header';
 import { SoftSkills } from '..';
+import { CVIcon } from '../../../core/assets/svgIcons';
 
 export const AboutPage = () => {
   return (
@@ -47,6 +48,12 @@ export const AboutPage = () => {
                 also love escaping into nature — be it a stroll in the park or a
                 hike in the woods.
               </p>
+              <section className='section__content--cv'>
+                <a href='fabiola.broccolo@gmail.com' target='_blank'>
+                  {CVIcon}
+                </a>
+                <p>Checkout my CV! </p>
+              </section>
             </section>
             <section className='section__content--right'>
               <img
