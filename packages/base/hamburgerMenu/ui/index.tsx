@@ -1,7 +1,7 @@
 import './style.scss';
 
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { HamburgerIcon, CloseIcon } from '../../../core/assets/svgIcons';
 
 export const HamburgerMenu = () => {
@@ -39,9 +39,9 @@ export const HamburgerMenu = () => {
         <ul className='hamburgerMenu__links'>
           {navItems.map((item) => (
             <li key={item.name}>
-              <Link to={item.path}>
+              <NavLink to={item.path}>
                 <p>{item.name}</p>
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>

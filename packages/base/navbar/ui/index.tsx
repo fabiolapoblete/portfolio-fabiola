@@ -1,6 +1,6 @@
 import './style.scss';
 
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const Navbar = () => {
   const navItems = [
@@ -27,9 +27,9 @@ export const Navbar = () => {
       <ul className='navbar__links'>
         {navItems.map((item) => (
           <li key={item.name}>
-            <Link to={item.path}>
+            <NavLink to={item.path}>
               <p>{item.name}</p>
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>

@@ -29,6 +29,10 @@
 
     li a {
       color: $headerColor;
+
+      &.active {
+        color: $primaryColor;
+      }
     }
   }
 }
