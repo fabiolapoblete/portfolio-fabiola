@@ -1,4 +1,4 @@
 {
-    "name": "@portfolio/contact",
-    "main": "./index.ts"
+  "name": "@portfolio/contact",
+  "main": "./index.ts"
 }

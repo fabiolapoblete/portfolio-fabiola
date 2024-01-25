@@ -1,23 +1,24 @@
-import "./style.scss";
-import { Link } from "react-router-dom";
+import './style.scss';
+
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
   const navItems = [
     {
-      name: "Home",
-      path: "/",
+      name: 'Home',
+      path: '/',
     },
     {
-      name: "About me",
-      path: "/about",
+      name: 'About me',
+      path: '/about',
     },
     {
-      name: "Projects",
-      path: "/projects",
+      name: 'Projects',
+      path: '/projects',
     },
     {
-      name: "Contact",
-      path: "/contact",
+      name: 'Contact',
+      path: '/contact',
     },
   ];
 

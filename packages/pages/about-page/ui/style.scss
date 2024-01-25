@@ -1,4 +1,4 @@
-@use "@portfolio/styles" as *;
+@use '@portfolio/styles' as *;
 
 * {
   @include reset;
@@ -57,7 +57,7 @@ body {
                   text-indent: 0.6rem;
 
                   &::before {
-                    content: "\00BB";
+                    content: '\00BB';
                     color: $headerColor;
                   }
 

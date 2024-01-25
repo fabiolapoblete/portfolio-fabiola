@@ -1,9 +1,10 @@
+import './style.scss';
+
 import {
   EmailIcon,
   GithubIcon,
   LinkedInIcon,
-} from "../../../core/assets/svgIcons";
-import "./style.scss";
+} from '../../../core/assets/svgIcons';
 
 export const Contact = () => {
   return (

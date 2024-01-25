@@ -1,15 +1,16 @@
-import "./style.scss";
-import { Header } from "@portfolio/header";
-import { SoftSkills } from "..";
+import './style.scss';
+
+import { Header } from '@portfolio/header';
+import { SoftSkills } from '..';
 
 export const AboutPage = () => {
   return (
-    <div className="wrapper">
+    <div className='wrapper'>
       <Header />
-      <main className="main">
-        <section className="section section--about">
-          <h3 className="section__title">About me</h3>
-          <section className="section__content">
+      <main className='main'>
+        <section className='section section--about'>
+          <h3 className='section__title'>About me</h3>
+          <section className='section__content'>
             <section>
               <p>
                 Two years ago i made a career switch to pursue my dream of
@@ -47,13 +48,13 @@ export const AboutPage = () => {
                 hike in the woods.
               </p>
             </section>
-            <section className="section__content--right">
+            <section className='section__content--right'>
               <img
-                className="hero__profile"
-                src="/profil-fabiola.jpeg"
-                alt="Profile picture of Fabiola Poblete"
+                className='hero__profile'
+                src='/profil-fabiola.jpeg'
+                alt='Profile picture of Fabiola Poblete'
               />
-              <section className="section__content--right__skills">
+              <section className='section__content--right__skills'>
                 <ul>
                   {SoftSkills.map((skill) => (
                     <li>

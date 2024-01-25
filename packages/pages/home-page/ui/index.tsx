@@ -1,9 +1,9 @@
-import { Header } from "@portfolio/header";
-import { Hero } from "@portfolio/hero";
+import { Header } from '@portfolio/header';
+import { Hero } from '@portfolio/hero';
 
 export const HomePage = () => {
   return (
-    <div className="wrapper">
+    <div className='wrapper'>
       <Header />
       <Hero />
     </div>
