@@ -1,17 +1,15 @@
-@use '@portfolio/styles' as *;
+@use "@portfolio/styles" as *;
 
 .header {
-    position: fixed;
-    top: 0;
-    width: $width-full;
-    // background-color:  $primaryColor;
-    background-color: #3AAFA9;
-    // box-shadow: $box-shaddow;
-    display: flex;
-    justify-content: flex-end;
-    padding: $padding-small;
+  position: fixed;
+  top: 0;
+  width: $width-full;
+  background-color: #17252a;
+  display: flex;
+  justify-content: flex-end;
+  padding: $padding-small;
 
-    @media screen and (max-width: $tabletBreakpoint) {
-        justify-content: flex-start;
-    }
+  @media screen and (max-width: $tabletBreakpoint) {
+    justify-content: flex-start;
+  }
 }

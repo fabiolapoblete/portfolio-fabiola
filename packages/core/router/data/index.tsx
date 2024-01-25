@@ -1,25 +1,27 @@
-import {
-    createBrowserRouter,
-    RouterProvider,
-  } from 'react-router-dom';
-  
-import { HomePage } from '@portfolio/home-page';
-import { AboutPage } from '@portfolio/about-page';
-import { ProjectsPage } from '@portfolio/projects-page';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import { HomePage } from "@portfolio/home-page";
+import { AboutPage } from "@portfolio/about-page";
+import { ProjectsPage } from "@portfolio/projects-page";
+import { ContactPage } from "@portfolio/contact-page";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <HomePage />,
   },
   {
-    path: '/about',
-    element: <AboutPage />
+    path: "/about",
+    element: <AboutPage />,
   },
   {
-    path: '/projects',
-    element: <ProjectsPage />
-  }
+    path: "/projects",
+    element: <ProjectsPage />,
+  },
+  {
+    path: "/contact",
+    element: <ContactPage />,
+  },
 ]);
 
 export const AppRoutes = () => {

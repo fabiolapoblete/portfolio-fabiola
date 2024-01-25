@@ -1,15 +1,19 @@
-@use '@portfolio/styles' as *;
+@use "@portfolio/styles" as *;
 
 .contact {
-    @include flex-column-2;
+  @include flex-column-2;
 
-    &__channels {
-        display: flex;
-        gap: 1rem;
+  p {
+    color: #17252a;
+    font-size: 16px;
+    font-weight: 600;
+    // margin-bottom: 1rem;
+    line-height: 1.5em;
+    text-align: justify;
+  }
 
-        a {
-            color: $primaryTextColor;
-            margin: 3px;
-        }
-    }
+  &__channels {
+    display: flex;
+    gap: 3rem;
+  }
 }
