@@ -1,15 +1,13 @@
-@use '@portfolio/styles' as *;
+@use "@portfolio/styles" as *;
 
 .tag {
-    // background-color: $tagColor;
-    background-color: #2B7A78;
-    // color: $headerColor;
-    color:#FEFFFF;
-    font-size: 0.8rem;
-    // font-weight: $font-weight-semi-bold;
-    font-weight: 500;
-    border-radius: 3rem;
-    border: none;
-    box-shadow: $box-shaddow;
-    padding: 0.5rem 1rem;
+  @include font-size-tiny;
+  color: $headerColor;
+  font-size: 0.8rem;
+  font-weight: $font-weight-medium;
+  background-color: $secondaryColor;
+  border-radius: 3rem;
+  border: none;
+  box-shadow: $box-shaddow;
+  padding: 0.5rem 1rem;
 }

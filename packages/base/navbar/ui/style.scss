@@ -1,35 +1,26 @@
-@use '@portfolio/styles' as *;
+@use "@portfolio/styles" as *;
 
 .navbar {
-    @media screen and (max-width: $tabletBreakpoint) {
-        display: none;
+  @media screen and (max-width: $tabletBreakpoint) {
+    display: none;
+  }
+
+  &__links {
+    @include font-size-medium;
+    font-weight: $font-weight-semi-bold;
+    letter-spacing: 0.1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    cursor: pointer;
+
+    li a {
+      color: $headerColor;
+      transition: color 0.5s ease-in-out;
+
+      &:hover {
+        color: $primaryColor;
+      }
     }
-
-    &__links {
-        @include font-size-medium; 
-        font-weight: $font-weight-semi-bold;
-        letter-spacing: 0.1rem;
-        display: flex;
-        justify-content: flex-end;
-        gap: 2rem;
-        cursor: pointer;
-
-        li a {
-            // color: $headerColor;
-            color: #FEFFFF;
-            // color: #17252A;
-            transition: color 0.5s ease-in-out;
-    
-            &:hover {
-                // color: $secondaryColor; 
-                color: #17252A;
-            }
-        }
-
-        .navbar__active {
-            a {
-                color: #17252A; 
-            }
-        }
-    }
+  }
 }

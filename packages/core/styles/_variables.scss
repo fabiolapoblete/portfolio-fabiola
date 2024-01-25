@@ -1,27 +1,27 @@
-// @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 :root {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 $baseline: 16px;
 
 /* COLORS */
-$primaryTextColor: #444;
-$primaryColor: #74BDCB;
-$secondaryColor: #EFE7BC;
-$headerColor: #fff;
-$tagColor: #74bccbb9;
+$primaryTextColor: #17252a;
+$primaryColor: #3aafa9;
+$headerColor: #feffff;
+$secondaryColor: #2b7a78;
 
 /* MARGINS, PADDINGS, GAPS */
 $padding-small: calc($baseline);
 $padding-medium: calc($baseline * 1.5);
-$padding-large: calc($baseline * 2); 
+$padding-large: calc($baseline * 2);
 
 $width-full: 100%;
+
 /* EFFECTS */
 $box-shaddow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+$box-shaddow-large: 0px 4px 8px 0px rgb(0 0 0 / 60%);
 
 /* RESPONSIVE */
 $mobileBreakpoint: 30rem;
@@ -35,53 +35,53 @@ $font-weight-medium: 500;
 $font-weight-regular: 400;
 
 @mixin font-size-huge {
-    font-size: calc($baseline * 2.5 );
-    line-height: 120%;
+  font-size: calc($baseline * 2.5);
+  line-height: 120%;
 }
 
 @mixin font-size-large {
-    font-size: calc($baseline * 1.8 );
-    line-height: 120%;
+  font-size: calc($baseline * 1.8);
+  line-height: 120%;
 }
 
 @mixin font-size-medium {
-    font-size: calc($baseline * 1.5 );
-    line-height: 120%;
+  font-size: calc($baseline * 1.5);
+  line-height: 120%;
 }
 
 @mixin font-size-regular {
-    font-size: calc($baseline * 1.3 );
-    line-height: 120%;
+  font-size: calc($baseline * 1.3);
+  line-height: 120%;
 }
 
 @mixin font-size-small {
-    font-size: $baseline;
-    line-height: 120%;
+  font-size: $baseline;
+  line-height: 120%;
 }
 
 @mixin font-size-tiny {
-    font-size: calc($baselin * 0.8 );
-    line-height: 120%;
+  font-size: calc($baseline * 0.8);
+  line-height: 120%;
 }
 
 /* HELPERS */
 @mixin reset {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 @mixin flex-column-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 @mixin center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

@@ -3,10 +3,10 @@
 .skillsSection {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-left: 2rem;
+  padding-left: $padding-large;
 
   &__title {
-    font-weight: 500;
+    font-weight: $font-weight-medium;
   }
 
   .skillsColumn {
@@ -14,10 +14,10 @@
     gap: 2rem;
 
     .skillsSection__skills {
-      color: #17252a;
-      font-weight: 600;
-      margin-bottom: 1rem;
+      color: $primaryTextColor;
+      font-weight: $font-weight-semi-bold;
       line-height: 1.5em;
+      margin-bottom: 1rem;
     }
   }
 }
@@ -32,8 +32,8 @@
       span {
         flex: 1;
         hr {
+          background-color: $secondaryColor;
           height: 5px;
-          background-color: #2b7a78;
           border: none;
         }
       }
@@ -41,14 +41,14 @@
   }
 
   &__desc {
-    color: #17252a;
-    font-weight: 600;
-    font-size: 1rem;
+    @include font-size-small;
+    color: $primaryTextColor;
+    font-weight: $font-weight-semi-bold;
     text-align: justify;
-    padding: 2rem;
+    padding: $padding-large;
 
     a {
-      color: #feffff;
+      color: $headerColor;
     }
   }
 
@@ -62,31 +62,30 @@
     .projectCard {
       width: 25rem;
       height: 18rem;
+      background-color: $headerColor;
       display: flex;
       flex-direction: column;
       border-radius: 0.6rem;
       box-shadow: $box-shaddow;
       padding: $padding-small;
-      background-color: #feffff;
 
       &:hover {
-        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 40%);
+        box-shadow: $box-shaddow-large;
         cursor: pointer;
       }
 
       &__title {
         @include font-size-medium;
-        color: #17252a;
+        color: $primaryTextColor;
         margin-top: 1rem;
       }
 
       &__desc {
-        color: #17252a;
         @include font-size-small;
+        color: $primaryTextColor;
         font-weight: $font-weight-medium;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
         text-align: justify;
+        margin: 1rem 0 2rem 0;
       }
 
       &__tags {

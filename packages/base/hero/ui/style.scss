@@ -1,71 +1,38 @@
-@use '@portfolio/styles' as *;
+@use "@portfolio/styles" as *;
 
 .hero {
-    height: 100vh;
-    // background-color: $primaryColor;
-    background-color: #3AAFA9;
-    background-image: url('/wave_w2881xh801_a775fc2518c0a6ca438299351b5d48a3faf59e7348ac4a6f5f88b3b68fd5a06a.webp');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-    // @include flex-column-2;
-    // justify-content: center;
-    display: flex;
-    gap: 3rem;
-    align-items: center;
-    padding-left: 10rem;
-    // text-align: center;
+  height: 100vh;
+  background-color: $primaryColor;
+  background-image: url("/wave_w2881xh801_a775fc2518c0a6ca438299351b5d48a3faf59e7348ac4a6f5f88b3b68fd5a06a.webp");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-left: 10rem;
 
-    &__heading {
-        // color: $headerColor;
-        color: #FEFFFF;
-        font-weight: 700;
+  &__heading {
+    color: $headerColor;
+    font-weight: $font-weight-bold;
 
-        h1 {
-            @include font-size-huge;
-            // font-weight: $font-weight-semi-bold;
-            // font-weight: 700;
-            margin: 0;
-        }
-    
-        h3 {
-            @include font-size-medium;
-            // font-weight: $font-weight-regular;
-            // font-weight: 700;
-            margin-top: 0;
-            color: #17252A;
-            text-align: end;
-
-        }
-
-        span {
-            // color: $secondaryColor;
-            color: #17252A;
-            // font-weight: 700;
-        }
+    h1 {
+      @include font-size-huge;
     }
 
-    &__profile {
-        border-radius: 50%;
-        box-shadow: $box-shaddow;
+    h3 {
+      @include font-size-medium;
+      color: $primaryTextColor;
+      text-align: end;
     }
 
-    // .btn {
-    //     // color: $primaryColor;
-    //     @include font-size-regular;
-    //     font-weight: $font-weight-semi-bold;
-    //     background: linear-gradient(to left, #FEFFFF 50%, #3AAFA9 50% ) right;  
-    //     background-size: 200%;
-    //     border-radius: 3rem;
-    //     border: none;
-    //     box-shadow: $box-shaddow;
-    //     padding: 0.5rem 1rem;
-    //     transition: 1s ease-out;
-    
-    //     &:hover {
-    //         transform: scale(1.1);
-    //         background-position: left;
-    //         cursor: pointer;
-    //     }
-    // }
+    span {
+      color: $primaryTextColor;
+    }
+  }
+
+  &__profile {
+    border-radius: 50%;
+    box-shadow: $box-shaddow;
+  }
 }
