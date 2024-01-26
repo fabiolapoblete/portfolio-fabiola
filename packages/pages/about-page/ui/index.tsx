@@ -49,7 +49,11 @@ export const AboutPage = () => {
                 hike in the woods.
               </p>
               <section className='section__content--cv'>
-                <a href='fabiola.broccolo@gmail.com' target='_blank'>
+                <a
+                  href='/CV-FabiolaPoblete.pdf'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   {CVIcon}
                 </a>
                 <p>Checkout my CV! </p>
@@ -63,8 +67,8 @@ export const AboutPage = () => {
               />
               <section className='section__content--right__skills'>
                 <ul>
-                  {SoftSkills.map((skill) => (
-                    <li>
+                  {SoftSkills.map((skill, index) => (
+                    <li key={index}>
                       <span>{skill}</span>
                     </li>
                   ))}

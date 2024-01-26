@@ -24,7 +24,11 @@ export const Contact = () => {
         <a href='https://github.com/fabiolapoblete' target='_blank'>
           {GithubIcon}
         </a>
-        <a href='https://github.com/fabiolapoblete' target='_blank'>
+        <a
+          href='/CV-FabiolaPoblete.pdf'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           {CVIcon}
         </a>
       </section>
