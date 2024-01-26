@@ -1,5 +1,6 @@
 import './style.scss';
 
+import { motion } from 'framer-motion';
 import { Header } from '@portfolio/header';
 import { Tag } from '@portfolio/tag';
 import { SkillsData, ProjectDetails } from '..';
@@ -9,7 +10,13 @@ export const ProjectsPage = () => {
   return (
     <div className='wrapper'>
       <Header />
-      <main className='main'>
+      <motion.main
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 30 }}
+        transition={{ duration: 0.5 }}
+        className='main'
+      >
         <section className='section section--skills' id='skills'>
           <h3 className='section__title'>Technical skills</h3>
           {SkillsData.map((section, index) => (
@@ -61,7 +68,7 @@ export const ProjectsPage = () => {
             ))}
           </section>
         </section>
-      </main>
+      </motion.main>
     </div>
   );
 };

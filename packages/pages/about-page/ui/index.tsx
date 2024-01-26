@@ -1,5 +1,6 @@
 import './style.scss';
 
+import { motion } from 'framer-motion';
 import { Header } from '@portfolio/header';
 import { SoftSkills } from '..';
 import { CVIcon } from '../../../core/assets/svgIcons';
@@ -8,7 +9,13 @@ export const AboutPage = () => {
   return (
     <div className='wrapper'>
       <Header />
-      <main className='main'>
+      <motion.main
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 30 }}
+        transition={{ duration: 0.5 }}
+        className='main'
+      >
         <section className='section section--about'>
           <h3 className='section__title'>About me</h3>
           <section className='section__content'>
@@ -49,13 +56,14 @@ export const AboutPage = () => {
                 hike in the woods.
               </p>
               <section className='section__content--cv'>
-                <a
+                <motion.a
                   href='/CV-FabiolaPoblete.pdf'
                   target='_blank'
                   rel='noopener noreferrer'
+                  whileHover={{ scale: 1.1, y: -10 }}
                 >
                   {CVIcon}
-                </a>
+                </motion.a>
                 <p>Checkout my CV! </p>
               </section>
             </section>
@@ -77,7 +85,7 @@ export const AboutPage = () => {
             </section>
           </section>
         </section>
-      </main>
+      </motion.main>
     </div>
   );
 };
