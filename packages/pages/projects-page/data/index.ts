@@ -12,12 +12,12 @@ type ProjectDetailsProps = {
 };
 
 export const SkillsData: SkillsDataProps[] = [
-  { title: 'Programing languages', skills: 'JavaScript, Python' },
+  { title: 'Programing languages', skills: 'JavaScript, TypeScript, Python' },
   {
     title: 'Frontend techniques',
     skills: 'HTML, CSS, React, Redux, SASS, framer-motion, Anime.js',
   },
-  { title: 'Backend techniques', skills: 'Node.js, Express.js, NeDb' },
+  { title: 'Backend techniques', skills: 'Node.js, Express.js, NeDB' },
   { title: 'Cloud services', skills: 'AWS (Amazon Web Services)' },
   { title: 'Version control', skills: 'GitHub, GitLab' },
   { title: 'UX design', skills: 'Figma' },

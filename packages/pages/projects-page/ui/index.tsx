@@ -18,7 +18,7 @@ export const ProjectsPage = () => {
         className='main'
       >
         <section className='section section--skills' id='skills'>
-          <h3 className='section__title'>Technical skills</h3>
+          <h3 className='section__title'>Tech stack</h3>
           {SkillsData.map((section, index) => (
             <section key={index} className='skillsSection'>
               <section className='skillsColumn'>
