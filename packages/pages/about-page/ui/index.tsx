@@ -21,13 +21,14 @@ export const AboutPage = () => {
           <section className='section__content'>
             <section>
               <p>
-                Two years ago i made a career switch to pursue my dream of
-                becoming a developer, and I haven't looked back since. I have a
-                background in meteorology with a bachelor's degree in physics
-                and dedicated eight years at SMHI where I explored diverse roles
-                and fields.
+                Enthusiastic and driven developer that finds great joy in
+                solving problems and is driven by seeing progress and
+                development. Methodical, thorough, attentive and curious with
+                good communication skills. Capable multitasker, having balanced
+                full-time studies with roles as a project manager and a frontend
+                developer.
               </p>
-              <p>
+              {/* <p>
                 I've gained professional experience in meteorology, development
                 and leadership from guiding captains worldwide to delivering
                 weather forecasts on national radio and issuing critical weather
@@ -46,7 +47,7 @@ export const AboutPage = () => {
                 I'm a person with a lot of energy, who finds great joy in
                 solving problems and I'm driven by seeing progress and
                 development.
-              </p>
+              </p> */}
 
               <p>
                 During my free time, you'll often find me soaking up the best
@@ -57,7 +58,7 @@ export const AboutPage = () => {
               </p>
               <section className='section__content--cv'>
                 <motion.a
-                  href='/CV-FabiolaPoblete.pdf'
+                  href='/CV_FabiolaBrodl.pdf'
                   target='_blank'
                   rel='noopener noreferrer'
                   whileHover={{ scale: 1.1, y: -10 }}

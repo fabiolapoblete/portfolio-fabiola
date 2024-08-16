@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: $primaryColor;
+  // background-color: $primaryColor;
+  background-color: #74bdcb;
   scroll-behavior: smooth;
 
   .main {
@@ -17,12 +18,14 @@ body {
     margin: 15rem auto;
 
     .section {
-      border: 8px solid $secondaryColor;
+      // border: 8px solid $secondaryColor;
+      border: 8px solid #feffff;
       padding: $padding-large;
 
       &__title {
         @include font-size-large;
-        color: $headerColor;
+        // color: $headerColor;
+        color: #feffff;
         font-weight: $font-weight-bold;
         margin-bottom: 2rem;
       }

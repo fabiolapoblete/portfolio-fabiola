@@ -12,26 +12,19 @@ type ProjectDetailsProps = {
 };
 
 export const SkillsData: SkillsDataProps[] = [
-  { title: 'Programing languages', skills: 'JavaScript, TypeScript, Python' },
+  { title: 'Programing languages', skills: 'JavaScript, Python, Java' },
   {
     title: 'Frontend techniques',
     skills: 'HTML, CSS, React, Redux, SASS, framer-motion, Anime.js',
   },
-  { title: 'Backend techniques', skills: 'Node.js, Express.js, NeDB' },
-  { title: 'Cloud services', skills: 'AWS (Amazon Web Services)' },
-  { title: 'Version control', skills: 'GitHub, GitLab' },
+  { title: 'Backend and databases', skills: 'Node.js, Express.js, NeDb' },
+  { title: 'Cloud services', skills: 'AWS, Firebase' },
+  { title: 'Version control', skills: 'Git, GitHub, GitLab' },
   { title: 'UX design', skills: 'Figma' },
   { title: 'Agile methodology', skills: 'Scrum' },
 ];
 
 export const ProjectDetails: ProjectDetailsProps[] = [
-  {
-    title: 'Territorial Duck',
-    imgSrc: '/territorial_duck.png',
-    desc: 'An ongoing game project in Unity in collaboration with my husband, sister-in-law and brother-in-law.',
-    tags: ['Unity'],
-    url: 'https://store.steampowered.com/app/2100130/Territorial_Duck/',
-  },
   {
     title: 'Bamboo Bites',
     imgSrc: '/bambooBites.png',
@@ -54,13 +47,13 @@ export const ProjectDetails: ProjectDetailsProps[] = [
     tags: ['JavaScript', 'Leaflet'],
     url: 'https://unrivaled-moxie-8e819b.netlify.app',
   },
-  {
-    title: 'Where It’s @ - ticket service',
-    imgSrc: '/whereItsAt.png',
-    desc: 'A group examination project in the React course. Different views and components using States, Routes, useEffect, useContext and API',
-    tags: ['JavaScript', 'React', 'Framer-motion', 'SASS'],
-    url: '',
-  },
+  // {
+  //   title: 'Where It’s @ - ticket service',
+  //   imgSrc: '/whereItsAt.png',
+  //   desc: 'A group examination project in the React course. Different views and components using States, Routes, useEffect, useContext and API',
+  //   tags: ['JavaScript', 'React', 'Framer-motion', 'SASS'],
+  //   url: '',
+  // },
   {
     title: 'WATCHlist',
     imgSrc: '/watchList.png',

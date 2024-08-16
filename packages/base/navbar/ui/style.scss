@@ -19,11 +19,13 @@
       transition: color 0.5s ease-in-out;
 
       &.active {
-        color: $primaryColor;
+        // color: $primaryColor;
+        color: #74bdcb;
       }
 
       &:hover {
-        color: $primaryColor;
+        // color: $primaryColor;
+        color: #74bdcb;
       }
     }
   }
