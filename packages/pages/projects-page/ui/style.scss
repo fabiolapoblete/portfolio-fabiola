@@ -37,7 +37,7 @@
         flex: 1;
         hr {
           // background-color: $secondaryColor;
-          background-color: #17252a;
+          background-color: #feffff;
           height: 5px;
           border: none;
         }
@@ -50,7 +50,7 @@
     color: $primaryTextColor;
     font-weight: $font-weight-semi-bold;
     text-align: justify;
-    padding: $padding-large;
+    // padding: $padding-large;
 
     a {
       color: $headerColor;
@@ -65,10 +65,11 @@
     padding: $padding-large;
 
     .projectCard {
-      width: 25rem;
-      height: 18rem;
+      width: 40rem;
+      // height: 40rem;
       background-color: $headerColor;
       display: flex;
+      gap: 1.5rem;
       flex-direction: column;
       border-radius: 0.6rem;
       box-shadow: $box-shaddow;
@@ -90,7 +91,7 @@
         color: $primaryTextColor;
         font-weight: $font-weight-medium;
         text-align: justify;
-        margin: 1rem 0 2rem 0;
+        // margin: 1rem 0 2rem 0;
       }
 
       &__tags {

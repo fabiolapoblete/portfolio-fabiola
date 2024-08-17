@@ -59,6 +59,7 @@ export const ProjectsPage = () => {
               >
                 <h4 className='projectCard__title'>{project.title}</h4>
                 <p className='projectCard__desc'>{project.desc}</p>
+                <img src={project.imgSrc} alt={project.title} />
                 <section className='projectCard__tags'>
                   {project.tags.map((tag, index) => (
                     <Tag key={index} tag={tag} />

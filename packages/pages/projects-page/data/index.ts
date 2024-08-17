@@ -26,6 +26,21 @@ export const SkillsData: SkillsDataProps[] = [
 
 export const ProjectDetails: ProjectDetailsProps[] = [
   {
+    title: 'Examination Project',
+    imgSrc: './examinationProject.png',
+    desc: 'The project has focused on renewing and improving plugga-IT.se. By implementing a new code structure with a package-based architecture, carrying out an extensive refactoring and redesign, we have created a modern and enhanced user experience while prioritizing scalability by building a stable and well-structured codebase.',
+    tags: [
+      'JavaScript',
+      'React',
+      'TypeScript',
+      'Firebase',
+      'SASS',
+      'Framer-motion',
+      'Figma',
+    ],
+    url: 'https://seahorse-app-cp4id.ondigitalocean.app/',
+  },
+  {
     title: 'Bamboo Bites',
     imgSrc: '/bambooBites.png',
     desc: 'A fullstack group examination project. We built a website for a restaurant that offers take away and a staff view for managing orders.',
@@ -37,16 +52,18 @@ export const ProjectDetails: ProjectDetailsProps[] = [
       'Next.js',
       'SASS',
       'Framer-motion',
+      'Figma',
     ],
     url: 'https://bamboo-bites-main.vercel.app/',
   },
   {
     title: 'CloudCast',
     imgSrc: '/cloudCast.png',
-    desc: 'Simple weather app using an API from Openweather. Used Leaflet to implement a map.',
+    desc: 'Simple weather app using an API from Openweather and map from Leaflet. Used a package based architecture. ',
     tags: ['JavaScript', 'Leaflet'],
     url: 'https://unrivaled-moxie-8e819b.netlify.app',
   },
+
   // {
   //   title: 'Where It’s @ - ticket service',
   //   imgSrc: '/whereItsAt.png',
@@ -57,7 +74,7 @@ export const ProjectDetails: ProjectDetailsProps[] = [
   {
     title: 'WATCHlist',
     imgSrc: '/watchList.png',
-    desc: 'Movie search app using an IMDb app.',
+    desc: 'Movie search app using an IMDB API.',
     tags: ['JavaScript', 'React', 'API'],
     url: 'https://melodic-jelly-ceb118.netlify.app',
   },
