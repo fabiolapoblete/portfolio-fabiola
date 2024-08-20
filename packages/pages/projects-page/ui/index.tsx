@@ -3,9 +3,9 @@ import './style.scss';
 import { motion } from 'framer-motion';
 import { Header } from '@portfolio/header';
 import { Tag } from '@portfolio/tag';
-import { SkillsData, ProjectDetails } from '..';
+import { ProjectDetails } from '..';
 import {
-  BuildIcon,
+  // BuildIcon,
   ChevronDown,
   GithubIcon,
   PlayIcon,

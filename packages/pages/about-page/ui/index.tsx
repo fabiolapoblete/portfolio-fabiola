@@ -6,7 +6,7 @@ import { Title } from '@portfolio/title';
 import { SoftSkills } from '..';
 import { CVIcon, EllipseIcon } from '../../../core/assets/svgIcons';
 import { SkillsData } from '..';
-import { BuildIcon } from '../../../core/assets/svgIcons';
+// import { BuildIcon } from '../../../core/assets/svgIcons';
 
 export const AboutPage = () => {
   return (
