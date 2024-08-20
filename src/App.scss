@@ -1,0 +1,6 @@
+@use '@portfolio/styles' as app;
+
+body {
+  background-color: app.$background-color;
+  color: app.$textColor;
+}

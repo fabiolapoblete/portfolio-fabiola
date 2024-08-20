@@ -1,0 +1,19 @@
+@use '@portfolio/styles' as *;
+
+.titleSection {
+  color: $titleColor;
+  display: flex;
+  gap: 1rem;
+
+  &__title {
+    @include font-size-large;
+    font-weight: $font-weight-bold;
+  }
+
+  &__line {
+    background-color: $titleColor;
+    height: 1px;
+    flex: 1;
+    align-self: center;
+  }
+}

@@ -1,15 +1,15 @@
 @use '@portfolio/styles' as *;
 
-.contact {
-  @include flex-column-2;
-  @include font-size-small;
-  color: $primaryTextColor;
-  font-weight: $font-weight-semi-bold;
-  line-height: 1.5em;
-  text-align: justify;
+// .contact {
+//   @include flex-column-2;
+//   @include font-size-small;
+//   color: $primaryTextColor;
+//   font-weight: $font-weight-semi-bold;
+//   line-height: 1.5em;
+//   text-align: justify;
 
-  &__channels {
-    display: flex;
-    gap: 3rem;
-  }
-}
+//   &__channels {
+//     display: flex;
+//     gap: 3rem;
+//   }
+// }

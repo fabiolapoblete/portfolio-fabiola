@@ -17,19 +17,19 @@
     color: $headerColor;
     font-weight: $font-weight-bold;
 
-    h1 {
-      @include font-size-huge;
-    }
+    // h1 {
+    //   @include font-size-huge;
+    // }
 
-    h3 {
-      @include font-size-medium;
-      color: $primaryTextColor;
-      text-align: end;
-    }
+    // h3 {
+    //   @include font-size-medium;
+    //   color: $primaryTextColor;
+    //   text-align: end;
+    // }
 
-    span {
-      color: $primaryTextColor;
-    }
+    // span {
+    //   color: $primaryTextColor;
+    // }
   }
 
   &__profile {

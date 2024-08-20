@@ -13,8 +13,9 @@
     left: 0;
     width: 70%;
     height: 100%;
-    background-color: $secondaryColor;
-    background-color: $primaryTextColor;
+    // background-color: $secondaryColor;
+    // background-color: $primaryTextColor;
+    background-color: $textColor;
     padding: $padding-small;
   }
 
@@ -28,10 +29,15 @@
     cursor: pointer;
 
     li a {
-      color: $headerColor;
+      // color: $headerColor;
+      color: $primaryColor;
+      text-decoration: none;
+
+      // color: $background-color;
 
       &.active {
-        color: $primaryColor;
+        // color: $primaryColor;
+        color: $background-color;
       }
     }
   }

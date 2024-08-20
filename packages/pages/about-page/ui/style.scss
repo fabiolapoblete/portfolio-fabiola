@@ -1,106 +1,190 @@
 @use '@portfolio/styles' as *;
 
-* {
-  @include reset;
-}
-
-body {
-  // background-color: $primaryColor;
-  background-color: #74bdcb;
-  scroll-behavior: smooth;
-
+.aboutWrapper {
   .main {
-    max-width: 62.5rem;
+    padding: 8rem 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 8rem;
-    margin: 15rem auto;
+    gap: 4rem;
+    .about__content {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      @include font-size-small;
 
-    .section {
-      // border: 8px solid $secondaryColor;
-      border: 8px solid #feffff;
-      padding: $padding-large;
+      &--cv {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
 
-      &__title {
-        @include font-size-large;
-        // color: $headerColor;
-        color: #feffff;
-        font-weight: $font-weight-bold;
-        margin-bottom: 2rem;
+        p {
+          font-weight: $font-weight-bold;
+        }
+      }
+    }
+    .about__techSkills {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      @include font-size-small;
+
+      &__row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
       }
 
-      &--about {
-        .section__content {
-          display: flex;
-          align-items: flex-start;
-          gap: 8rem;
+      &__column {
+        display: flex;
+        gap: 1rem;
 
-          @media screen and (max-width: $tabletBreakpoint) {
-            flex-direction: column;
+        &--title {
+          // color: $secondaryColor;
+          color: $titleColor;
+          font-weight: $font-weight-bold;
+        }
+      }
+    }
+    .about__softSkills {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      @include font-size-small;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        li {
+          text-transform: capitalize;
+          text-indent: 0.6rem;
+
+          &::before {
+            content: '\00BB';
+            color: $headerColor;
           }
 
-          p {
-            @include font-size-small;
-            color: $primaryTextColor;
-            font-weight: $font-weight-semi-bold;
-            text-align: justify;
-            margin-bottom: 1rem;
-          }
-
-          &--right {
-            @include flex-column-2;
-
-            @media screen and (max-width: $tabletBreakpoint) {
-              flex-direction: row;
-              align-items: center;
-            }
-
-            @media screen and (max-width: $mobileBreakpoint) {
-              flex-direction: column;
-              align-items: center;
-            }
-
-            &__skills {
-              ul {
-                @include font-size-small;
-                font-weight: $font-weight-semi-bold;
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-
-                li {
-                  text-transform: capitalize;
-                  text-indent: 0.6rem;
-
-                  &::before {
-                    content: '\00BB';
-                    color: $headerColor;
-                  }
-
-                  span {
-                    position: relative;
-                    left: 1rem;
-                  }
-                }
-              }
-            }
-          }
-          &--cv {
-            display: flex;
-            text-align: center;
-            gap: 1rem;
-            margin-top: 2.5rem;
-
-            p {
-              @include font-size-small;
-              color: $headerColor;
-              font-weight: $font-weight-bold;
-              align-self: flex-end;
-            }
+          span {
+            position: relative;
+            left: 1rem;
           }
         }
       }
     }
+
+    @media (min-width: $tabletBreakpoint) {
+      max-width: 800px;
+    }
+  }
+
+  @media (min-width: $tabletBreakpoint) {
+    display: flex;
+    justify-content: center;
   }
 }
+
+// * {
+//   @include reset;
+// }
+
+// body {
+//   // background-color: $primaryColor;
+//   background-color: #74bdcb;
+//   scroll-behavior: smooth;
+
+//   .main {
+//     max-width: 62.5rem;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     gap: 8rem;
+//     margin: 15rem auto;
+
+//     .section {
+//       // border: 8px solid $secondaryColor;
+//       border: 8px solid #feffff;
+//       padding: $padding-large;
+
+//       &__title {
+//         @include font-size-large;
+//         // color: $headerColor;
+//         color: #feffff;
+//         font-weight: $font-weight-bold;
+//         margin-bottom: 2rem;
+//       }
+
+//       &--about {
+//         .section__content {
+//           display: flex;
+//           align-items: flex-start;
+//           gap: 8rem;
+
+//           @media screen and (max-width: $tabletBreakpoint) {
+//             flex-direction: column;
+//           }
+
+//           p {
+//             @include font-size-small;
+//             color: $primaryTextColor;
+//             font-weight: $font-weight-semi-bold;
+//             text-align: justify;
+//             margin-bottom: 1rem;
+//           }
+
+//           &--right {
+//             @include flex-column-2;
+
+//             @media screen and (max-width: $tabletBreakpoint) {
+//               flex-direction: row;
+//               align-items: center;
+//             }
+
+//             @media screen and (max-width: $mobileBreakpoint) {
+//               flex-direction: column;
+//               align-items: center;
+//             }
+
+//             &__skills {
+//               ul {
+//                 @include font-size-small;
+//                 font-weight: $font-weight-semi-bold;
+//                 display: flex;
+//                 flex-direction: column;
+//                 gap: 1rem;
+
+//                 li {
+//                   text-transform: capitalize;
+//                   text-indent: 0.6rem;
+
+//                   &::before {
+//                     content: '\00BB';
+//                     color: $headerColor;
+//                   }
+
+//                   span {
+//                     position: relative;
+//                     left: 1rem;
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//           &--cv {
+//             display: flex;
+//             text-align: center;
+//             gap: 1rem;
+//             margin-top: 2.5rem;
+
+//             p {
+//               @include font-size-small;
+//               color: $headerColor;
+//               font-weight: $font-weight-bold;
+//               align-self: flex-end;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
