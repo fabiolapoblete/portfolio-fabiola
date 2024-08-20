@@ -33,7 +33,7 @@ export const ProjectsPage = () => {
             find additional projects on my{' '}
             <a
               className='projects__introduction__link'
-              href='github.com/fabiolapoblete'
+              href='https://github.com/fabiolapoblete'
               target='_blank'
             >
               GitHub page.
@@ -56,7 +56,7 @@ export const ProjectsPage = () => {
                   {PlayIcon}
                   <p>Run app</p>
                 </a>
-                <a href='github.com/fabiolapoblete' target='_blank'>
+                <a href={project.github} target='_blank'>
                   {GithubIcon}
                   View on Github.
                 </a>

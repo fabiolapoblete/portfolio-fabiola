@@ -9,6 +9,7 @@ type ProjectDetailsProps = {
   desc: string;
   tags: string[];
   url: string;
+  github: string;
 };
 
 export const SkillsData: SkillsDataProps[] = [
@@ -39,6 +40,7 @@ export const ProjectDetails: ProjectDetailsProps[] = [
       'Figma',
     ],
     url: 'https://seahorse-app-cp4id.ondigitalocean.app/',
+    github: 'https://github.com/fabiolapoblete',
   },
   {
     title: 'Bamboo Bites',
@@ -55,6 +57,7 @@ export const ProjectDetails: ProjectDetailsProps[] = [
       'Figma',
     ],
     url: 'https://bamboo-bites-main.vercel.app/',
+    github: 'https://github.com/fabiolapoblete/bamboo-bites',
   },
   {
     title: 'CloudCast',
@@ -62,6 +65,7 @@ export const ProjectDetails: ProjectDetailsProps[] = [
     desc: 'Simple weather app using an API from Openweather and map from Leaflet. Used a package based architecture. ',
     tags: ['JavaScript', 'Leaflet'],
     url: 'https://unrivaled-moxie-8e819b.netlify.app',
+    github: 'https://github.com/fabiolapoblete/cloud-cast',
   },
 
   // {
@@ -77,6 +81,8 @@ export const ProjectDetails: ProjectDetailsProps[] = [
     desc: 'Movie search app using an IMDB API.',
     tags: ['JavaScript', 'React', 'API'],
     url: 'https://melodic-jelly-ceb118.netlify.app',
+    github:
+      'https://github.com/fabiolapoblete/individual-examination-framework',
   },
   {
     title: 'Solaris',
@@ -84,5 +90,6 @@ export const ProjectDetails: ProjectDetailsProps[] = [
     desc: 'Individual examination project in the JavaScript course.',
     tags: ['JavaScript'],
     url: 'https://kaleidoscopic-empanada-92990b.netlify.app',
+    github: 'https://github.com/fabiolapoblete/solaris',
   },
 ];
