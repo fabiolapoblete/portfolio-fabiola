@@ -1,8 +1,3 @@
-type SkillsDataProps = {
-  title: string;
-  skills: string;
-};
-
 type ProjectDetailsProps = {
   title: string;
   imgSrc: string;
@@ -11,19 +6,6 @@ type ProjectDetailsProps = {
   url: string;
   github: string;
 };
-
-export const SkillsData: SkillsDataProps[] = [
-  { title: 'Programing languages', skills: 'JavaScript, Python, Java' },
-  {
-    title: 'Frontend techniques',
-    skills: 'HTML, CSS, React, Redux, SASS, framer-motion, Anime.js',
-  },
-  { title: 'Backend and databases', skills: 'Node.js, Express.js, NeDb' },
-  { title: 'Cloud services', skills: 'AWS, Firebase' },
-  { title: 'Version control', skills: 'Git, GitHub, GitLab' },
-  { title: 'UX design', skills: 'Figma' },
-  { title: 'Agile methodology', skills: 'Scrum' },
-];
 
 export const ProjectDetails: ProjectDetailsProps[] = [
   {

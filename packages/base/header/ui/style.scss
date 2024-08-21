@@ -1,21 +1,10 @@
 @use '@portfolio/styles' as *;
 
 .header {
-  // background-color: $primaryTextColor;
-  // position: fixed;
-  // top: 0;
-  // width: $width-full;
-  // display: flex;
-  // justify-content: flex-end;
-  // padding: $padding-small;
-
-  // @media screen and (max-width: $tabletBreakpoint) {
-  //   justify-content: flex-start;
-  // }
+  background-color: $background-color;
+  border-bottom: 1px solid $secondaryColor;
+  width: $width-full;
   position: fixed;
   top: 0;
-  width: $width-full;
   padding: $padding-small;
-  border-bottom: 1px solid $secondaryColor;
-  background-color: $background-color;
 }

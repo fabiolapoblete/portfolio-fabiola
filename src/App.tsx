@@ -1,6 +1,7 @@
+import './App.scss';
+
 import { AnimatePresence } from 'framer-motion';
 import { AppRoutes } from '@portfolio/router';
-import './App.scss';
 
 export function App() {
   return (

@@ -56,12 +56,6 @@
         }
       }
     }
-    @media (min-width: $tabletBreakpoint) {
-      max-width: 800px;
-      &__project {
-        gap: 2rem;
-      }
-    }
   }
   @media (min-width: $tabletBreakpoint) {
     display: flex;

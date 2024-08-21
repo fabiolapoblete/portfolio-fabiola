@@ -1,13 +1,9 @@
+import './style.scss';
+
 import { motion } from 'framer-motion';
 import { Header } from '@portfolio/header';
-// import { Contact } from '@portfolio/contact';
 import { Title } from '@portfolio/title';
-import {
-  CVIcon,
-  GithubIcon,
-  LinkedInIcon,
-} from '../../../core/assets/svgIcons';
-import './style.scss';
+import { CVIcon, GithubIcon, LinkedInIcon } from '@portfolio/assets';
 
 export const ContactPage = () => {
   return (
@@ -57,10 +53,6 @@ export const ContactPage = () => {
             you!
           </p>
         </section>
-        {/* <section className='section section--contact'>
-          <h3 className='section__title'>Contact</h3>
-          <Contact />
-        </section> */}
       </motion.main>
     </div>
   );

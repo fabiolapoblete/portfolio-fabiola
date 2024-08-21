@@ -1,10 +1,6 @@
 @use '@portfolio/styles' as *;
 
 .navbar {
-  @media screen and (max-width: $tabletBreakpoint) {
-    display: none;
-  }
-
   &__links {
     @include font-size-medium;
     font-weight: $font-weight-semi-bold;
@@ -20,14 +16,15 @@
       text-decoration: none;
 
       &.active {
-        // color: $primaryColor;
         color: $secondaryColor;
       }
 
       &:hover {
-        // color: $primaryColor;
         color: $secondaryColor;
       }
     }
+  }
+  @media screen and (max-width: $tabletBreakpoint) {
+    display: none;
   }
 }

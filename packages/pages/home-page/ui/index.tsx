@@ -1,7 +1,7 @@
-import { Header } from '@portfolio/header';
-import { motion } from 'framer-motion';
-// import { Hero } from '@portfolio/hero';
 import './style.scss';
+
+import { motion } from 'framer-motion';
+import { Header } from '@portfolio/header';
 
 export const HomePage = () => {
   return (
@@ -15,9 +15,6 @@ export const HomePage = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 3, ease: 'linear' }}
-          // initial={{ x: -500, opacity: 0 }}
-          // animate={{ x: 0, opacity: 1 }}
-          // transition={{ duration: 2, ease: 'linear' }}
         />
         <motion.section
           className='homeWrapper__profile__desc'
@@ -31,7 +28,6 @@ export const HomePage = () => {
           <h3>frontend developer</h3>
         </motion.section>
       </section>
-      {/* <Hero /> */}
     </div>
   );
 };

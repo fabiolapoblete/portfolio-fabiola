@@ -2,7 +2,7 @@ import './style.scss';
 
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { HamburgerIcon, CloseIcon } from '../../../core/assets/svgIcons';
+import { HamburgerIcon, CloseIcon } from '@portfolio/assets';
 
 export const HamburgerMenu = () => {
   const navItems = [

@@ -2,14 +2,12 @@
 
 .tag {
   @include font-size-tiny;
-  color: $background-color;
-  // font-size: 0.8rem;
   @include font-size-small;
-  font-weight: $font-weight-medium;
-  // background-color: #74bdcb;
+  color: $background-color;
   background-color: $secondaryColor;
+  font-weight: $font-weight-medium;
+  padding: 0.5rem 1rem;
   border-radius: 3rem;
   border: none;
   box-shadow: $box-shaddow;
-  padding: 0.5rem 1rem;
 }

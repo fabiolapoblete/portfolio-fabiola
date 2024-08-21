@@ -3,18 +3,12 @@
 .hamburgerMenu {
   display: none;
 
-  @media screen and (max-width: $tabletBreakpoint) {
-    display: block;
-  }
-
   &.open {
     position: fixed;
     top: 0;
     left: 0;
     width: 70%;
     height: 100%;
-    // background-color: $secondaryColor;
-    // background-color: $primaryTextColor;
     background-color: $textColor;
     padding: $padding-small;
   }
@@ -29,16 +23,15 @@
     cursor: pointer;
 
     li a {
-      // color: $headerColor;
       color: $primaryColor;
       text-decoration: none;
-
-      // color: $background-color;
-
       &.active {
-        // color: $primaryColor;
         color: $background-color;
       }
     }
+  }
+
+  @media screen and (max-width: $tabletBreakpoint) {
+    display: block;
   }
 }

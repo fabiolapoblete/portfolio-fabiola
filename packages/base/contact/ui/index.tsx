@@ -1,11 +1,7 @@
 import './style.scss';
 
 import { motion } from 'framer-motion';
-import {
-  CVIcon,
-  GithubIcon,
-  LinkedInIcon,
-} from '../../../core/assets/svgIcons';
+import { CVIcon, GithubIcon, LinkedInIcon } from '@portfolio/assets';
 
 export const Contact = () => {
   return (
