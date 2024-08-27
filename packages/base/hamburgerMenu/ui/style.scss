@@ -25,6 +25,7 @@
     li a {
       color: $primaryColor;
       text-decoration: none;
+
       &.active {
         color: $background-color;
       }
